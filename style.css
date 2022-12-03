@@ -27,12 +27,19 @@ html {
       margin-left: -17px;
       margin-right: -17px;
     }
+
+    .header {
+      margin-bottom: 5px;
+      
+    }
+
     .h3 {
     margin: 1.38rem 0;
     font-size: 1.424rem;
     }
     
     #tip-calculator {
+    margin-bottom: 10px;
     width: 80%;
     max-width: 350px;
     padding: 1rem;
@@ -55,7 +62,17 @@ html {
     label {
     display: block;
     }
-    
+    button {
+      width: 100%;
+      cursor: pointer;
+      margin-bottom: 20px;
+      color: rgb(11, 108, 161);
+    }
+
+    .billtotal {
+      margin: 10px;
+    }
+
     input[type="number"] {
     width: 100%;
     max-width: 4em;
@@ -76,6 +93,9 @@ html {
     margin: 0;
     }
     
+    #people {
+    max-width: 3em;
+    }
     
     #percentage {
     -webkit-appearance: none;

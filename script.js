@@ -1,17 +1,16 @@
 const form = document.getElementById('form');
-const totalBill = document.getElementById("bill");
+const bill = document.getElementById("bill");
 const tipPercentage = document.getElementById("percentage");
 const percentageOutput = document.getElementById("percentage-output");
 const output = document.getElementById('output');
-
 // listeners
 
 form.addEventListener("change", calculateTip);
 tipPercentage.oninput = calculateTip;
 
 function calculateTip() {
-    const dollarsPerPerson = 
-        (totalBill.value * ( tipPercentage.value / 100)).toFixed(2);
+    dollarsPerPerson = 
+        (bill.value * ( tipPercentage.value / 100)).toFixed(2);
 
         displayTip(`$${dollarsPerPerson}`);
         displayPercentage();
@@ -24,4 +23,14 @@ function displayPercentage() {
     percentageOutput.innerText = `${tipPercentage.value}%`;
 }
 
+let dollarsPerPerson;
 calculateTip();
+
+
+
+function calculatebill() {
+
+    const totalbill = document.getElementById('billtotal');
+
+    totalbill.innerHTML = +dollarsPerPerson + +bill.value;
+}
