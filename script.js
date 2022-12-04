@@ -29,8 +29,8 @@ calculateTip();
 
 
 function calculatebill() {
-
     const totalbill = document.getElementById('billtotal');
-
+    
     totalbill.innerHTML = +dollarsPerPerson + +bill.value;
+    
 }
