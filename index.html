@@ -8,15 +8,15 @@
     <title>Tip Calculator</title>
 </head>
 <body>
-    <h1 class="header">Tip your Waiter!</h1>
+    <h1 class="header">The Tip Calculator!</h1>
 
   
                 <div id="tip-calculator">
-                    <h1>Tip Calculator</h1>
+                    <!-- <h1>Tip Calculator</h1> -->
               
                     <form id="form" onsubmit="calculatebill(); return false">
                         <label for="bill" class="h3">
-                            Bill: $
+                            Bill Total: $
                             <input type="number" min="0" step="0.01" value="50" name="bill" id="bill" />
                         </label>
                         <label for="percentage" class="h3">
@@ -29,10 +29,11 @@
                 
 
                 <button id="calculatebutton" ; type="submit" > Calculate Bill Total   </button>
-                <div id="billtotal"></div>
+                <div id="billtotal">
+
+                </div>
                     
 
-            </form>
         </form>
     </div>
     <script src="script.js"></script> 
